@@ -10,10 +10,65 @@ import joblib
 
 st.set_page_config(
     page_title="Manufacturing Output Prediction",
-    page_icon="🏭",
-    layout="wide"
+        page_icon="🏭",
+        layout="wide"
 )
 
+
+
+# --------------------------------------------------
+# Custom UI Theme
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# Custom UI Theme
+# --------------------------------------------------
+
+st.markdown("""
+<style>
+/* Light blue application background */
+.stApp {
+    background-color: #eef4fb;
+}
+
+/* Dark blue headings */
+h1, h2, h3,
+[data-testid="stHeading"] {
+    color: #12345a !important;
+}
+
+/* Dark blue paragraph text, labels, and Markdown */
+p, label, .stMarkdown {
+    color: #12345a;
+}
+
+/* Prediction result value */
+[data-testid="stMetricValue"] {
+    color: #12345a;
+}
+
+/* Blue buttons */
+div.stButton > button {
+    background-color: #1d4e89;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* Button hover effect */
+div.stButton > button:hover {
+    background-color: #12345a;
+    color: white;
+    border: none;
+}
+</style>
+
+
+
+    """, unsafe_allow_html=True)
 
 # --------------------------------------------------
 # Default Input Values
